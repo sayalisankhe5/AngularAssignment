@@ -1,0 +1,62 @@
+<fieldset>
+    <search-component (searchTextChanged)="onSearch($event)"></search-component>
+    <table>
+        <tr>
+           
+            <th style="padding-right:10px" colSpan="2">
+                <label-component [message]="'Name'"></label-component>
+            </th>
+            <th colSpan="2">
+                <label-component [message]="'Price'"></label-component>
+            </th>
+        
+          </tr>
+         
+           <!-- <tr>
+                <th colSpan="2">
+                        <label-component [message]="'Sporting Goods'"></label-component>
+                </th>
+              </tr>
+              <tr *ngFor="let p of products | slice:0:3">
+                
+                <td colSpan="2">
+                    {{p.name}}
+                </td>
+                <td colSpan="2">
+                    {{p.price}}
+                </td>
+           
+              </tr>
+              
+              
+              <tr>
+                <th colSpan="2">
+                        <label-component [message]="'Electronics'"></label-component>
+                </th>
+              </tr>
+              <tr *ngFor="let p of products | slice:3:7">
+                
+                <td colSpan="2">
+                    {{p.name}}
+                </td>
+                <td colSpan="2">
+                    {{p.price}}
+                </td>
+           
+              </tr> -->
+              
+                
+         
+              <tr *ngFor="let p of products">
+                
+                <td colSpan="2">
+                    {{p.name}}
+                </td>
+                <td colSpan="2">
+                    {{p.price}}
+                </td>
+           
+              </tr>
+          
+    </table>
+</fieldset>
